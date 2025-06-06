@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Me Up - Online Groceries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'panda-pink': '#14b8a6', // Main brand teal
+              'panda-dark-pink': '#0f766e', // Darker teal
+              'panda-green': '#32BA7C',
+              'panda-text': '#333333',
+              'panda-text-light': '#666666',
+              'panda-bg-light': '#F7F7F7',
+              'panda-border': '#E0E0E0',
+              // Removed auth-specific pink colors. Auth pages will use the main theme.
+              // Example: 'auth-brand-pink': '#E21B70' -> use 'panda-pink'
+              //          'auth-form-bg': '#FFF1F2' -> use 'white' or 'panda-bg-light'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Custom scrollbar hiding utility */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@/": "./",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-panda-bg-light">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
