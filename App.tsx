@@ -2,7 +2,8 @@
 import React from 'react';
 import * as ReactRouterDOM from 'react-router-dom';
 const { HashRouter, Routes, Route, useLocation, useNavigate, Link, Navigate } = ReactRouterDOM;
-import { Analytics } from "@vercel/analytics/react"; // Added import
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react" 
 
 // Page Imports using @/ alias
 import HomePage from '@/pages/HomePage';
